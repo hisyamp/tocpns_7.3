@@ -22,7 +22,7 @@ Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->na
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 Route::post('/regis', 'auth\RegisterController@regis')->name('register');
 
-// Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth'], function(){
 
 // user
 Route::get('/paymentacc', 'User\UserController@paymentacc');
@@ -68,4 +68,9 @@ Route::get('/banksoalpppk', 'PPPK\PppkController@banksoalpppk');
 Route::get('/apibankpppk/{ju}', 'PPPK\PppkController@apibankpppk');
 Route::get('/apitopppk', 'PPPK\PppkController@apiToPppk');
 Route::get('/buatpaketpppk', 'PPPK\PppkController@buatPaketPppk');
-// });
+
+//payment
+Route::get('/payment', 'Payment\PaymentController@index');
+Route::get('/pay', 'Payment\PaymentController@checkout');
+
+});
