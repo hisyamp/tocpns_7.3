@@ -13,7 +13,6 @@
 <script>
     function payNow(){
         // console.log("tes asajaaa")
-        window.snap.pay('{{$snaptoken}}')
     }
 </script>
 @endsection
