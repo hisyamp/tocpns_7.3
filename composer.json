@@ -17,6 +17,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^2.4",
         "midtrans/midtrans-php": "^2.5",
+        "tymon/jwt-auth": "dev-develop",
         "yajra/laravel-datatables": "^1.5"
     },
     "require-dev": {
